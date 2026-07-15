@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "ArchivoBlack"; 
+    /* Gunakan ./ untuk menandakan file ada di folder yang sama */
+    src: url("./ArchivoBlack-Regular.ttf") format("truetype");
+}
+
+@media (min-width: 1024px) {
+    .navContainer {
+        width: 80%;
+        padding-right: 110px; /* Geser yang kamu mau tadi */
+    }
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    padding: 15px;
+    border-color: rgb(255, 207, 171);
+}
+
+
+h1,h2 {
+        font-family: "ArchivoBlack", sans-serif;
+}
