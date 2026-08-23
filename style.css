@@ -12,7 +12,7 @@
 }
 
 body {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(237,220,211);
     padding: 15px;
     border-color: rgb(255, 207, 171);
 }
@@ -20,4 +20,41 @@ body {
 
 h1,h2 {
         font-family: "ArchivoBlack", sans-serif;
+}
+
+.text-perspective{
+    transform: perspective(500px) rotateY(-20deg);
+}
+
+@media (max-width: 786px){
+
+    .text-perspective{
+        font-size: 3em;
+
+        transform: perspective(500px) rotateY(-20deg);
+    }
+
+    #icon-adjust-mobile {
+        margin-top: calc(50% - 50vh);
+    }
+
+    #background1-adjust-mobile {
+        background-image: url("galeri-page.jpg.jpeg");
+        background-size: auto 50%;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+    #background2-adjust-mobile {
+        background-image: url("dark-living-room.jpg.jpeg");
+        background-size: auto 50%;
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+
+    #background3-adjust-mobile {
+    background-image: url("assost-page.jpg.jpeg");
+    background-size: auto 50%;
+    background-position: top;
+    background-repeat: no-repeat;
+}
 }
