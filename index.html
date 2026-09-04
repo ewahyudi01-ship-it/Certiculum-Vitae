@@ -40,19 +40,19 @@
 
 <div class="container mx-auto px-15 mt-20 lg:mt-80 md:mt-40">
     <h1 id="judul"
-        class="relative text-3xl md:text-4xl lg:text-5xl font-bold text-white font-archivo uppercase tracking-wider text-center lg:pr-[450px] md:pr-[200px] z-10">
+        class="relative text-3xl md:text-4xl lg:text-5xl font-bold text-white font-archivo uppercase tracking-wider text-center lg:pr-[450px] md:pr-[200px] z-20">
         HALO!, SAYA <span class="text-[rgb(255,231,163)]">ERICK!</span>
     </h1>
     <div id="judul"
-         class="relative text-white text-sm md:text-sm lg:text-3xl mt-4 font-light pl-[30px]] lg:pl-[185px] md:pl-[70px] z-10">
+         class="relative text-white text-sm md:text-sm lg:text-3xl mt-4 font-light pl-[30px]] lg:pl-[185px] md:pl-[70px] z-20">
         Mahasiswa Universitas Ciputra
     </div>
     <div id="judul"
-         class="absolute top-35 w-60 h-20 lg:top-80 lg:left-100 lg:w-170 lg:h-40 border-r border-b border-white/40 md:top-40 md:left-35 md:w-85 md:h-25 z-10">
+         class="absolute top-35 w-60 h-20 lg:top-80 lg:left-100 lg:w-170 lg:h-40 bg-white/0 backdrop-blur-md border border-white/0 rounded-3xl shadow-lg  md:top-40 md:left-35 md:w-85 md:h-25 z-10">
     </div>
 </div>
 
-<div class="absolute w-screen left-1/2 -translate-x-1/2 bottom-21 lg:-bottom-85 z-10 overflow-x-hidden">
+<div class="absolute w-screen left-1/2 -translate-x-1/2 bottom-21 lg:-bottom-85 z-10">
     <img src="snow ground.png" class="w-[380vw] lg:w-[105vw] max-w-none h-auto object-cover block scale-105 z-50 "/>
 </div>
 
@@ -60,10 +60,16 @@
     <img src="Da flag.png" class="w-[50vw] lg:w-[33vw] max-w-none h-auto object-cover block z-5"/>
 </div>
 
-<div class="py-180 lg:py-300 relative flex min-h-fit">
+<div class="py-180 lg:py-300 relative flex flex-col min-h-fit">
 
+    <div class="relative grid grid-cols">
+        <div
+             class="text-white text-sm md:text-sm lg:text-3xl mt-4 font-light pl-[30px]] lg:pl-[185px] md:pl-[70px] z-20">
+            ABOUT ME
+        </div>
+    </div>
 
-    <aside class="w-1/15 lg:w-1/6 h-screen sticky top-0 flex flex-col justify-center items-center lg:gap-6 lg:p-4">
+    <aside class="w-1/5 lg:w-1/6 h-screen sticky top-0 flex flex-col justify-center items-center lg:gap-6 lg:p-4">
 
         <p class="text-[11px] text-neutral-500 uppercase tracking-widest mb-2">About</p>
 
@@ -105,14 +111,14 @@
     <main class="flex-1 flex flex-col">
 
         <!-- Detector Zone 1: Untuk Elemen 01 -->
-        <section id="detector-1" class="min-h-[60vh] w-full items-center justify-center flex relative">
+        <section id="detector-1" class="w-full max-w-5xl mx-auto items-center justify-center flex relative">
 
-            <div id="icon-adjust-mobile" class="image-slot flex flex-row w-full max-w-4xl h-[500px] rounded-3xl flex items-center justify-center relative">
+            <div id="icon-adjust-mobile" class="image-slot flex flex-row w-full h-[500px] rounded-3xl flex items-center justify-center relative">
                 <div class="w-1/1 lg:w-1/3 flex justify-center">
                 </div>
             </div>
 
-            <div id="hobiPage" class="E w-1/1 lg:w-1/3 text-right lg:pr-65">
+            <div id="hobiPage" class="E w-1/1 lg:w-1/3 text-right">
                 <h3 class="lg:text-3xl font-bold">Skill</h3>
                 <p class="text-[11px] lg:text-sm text-neutral-600 mt-2">Gambar digital (PowerPoint, Krita, Ms Paint),
                     animasi (Pivot Animaator, Krita, Powerpoint)</p>
@@ -121,7 +127,7 @@
         </section>
 
         <!-- Detector Zone 2: Untuk Elemen 02 -->
-        <section id="detector-2" class="min-h-[60vh] w-full items-center justify-center flex relative">
+        <section id="detector-2" class="w-full max-w-5xl mx-auto items-center justify-center flex relative">
             <div class="R w-1/1 lg:w-1/3 absolute right-0 lg:-left-0 pointer-events-none z-40 text-right max-w-xs ">
                 <h3 class="lg:text-3xl font-bold">Hobi?</h3>
                 <p class="text-[11px] lg:text-sm text-neutral-600 mt-2">Sebagai individu
@@ -130,41 +136,44 @@
                     ini?</p>
             </div>
 
-            <div id="icon-adjust-mobile" class ="image-slot flex flex-row w-full max-w-4xl h-[500px] rounded-3xl flex items-center justify-center relative">
-                <div class="w-1/1 lg:w-1/3 flex justify-center">
+            <div id="icon-adjust-mobile" class ="image-slot flex flex-row w-full  h-[500px] rounded-3xl flex items-center justify-center relative">
+                <div class="w-1/1 lg:w-1/1 flex justify-center">
                 </div>
             </div>
 
-            <div class="w-1/3 text-right lg:pr-65">
+            <div class="w-1/5 text-right ">
             </div>
 
         </section>
 
 
-        <section id="detector-3" class="min-h-[60vh] w-full items-center justify-center flex relative">
+        <section id="detector-3" class="w-full max-w-5xl mx-auto items-center justify-center flex relative">
 
-            <div id="icon-adjust-mobile" class="image-slot flex flex-row w-full max-w-4xl h-[500px] rounded-3xl flex items-center justify-center relative">
+            <div id="icon-adjust-mobile" class="image-slot w-full h-[200px] rounded-3xl flex items-center justify-center relative">
                 <div class="w-1/1 lg:w-1/3 flex justify-center">
                 </div>
             </div>
 
-            <div class="I w-1/1 lg:w-1/3 text-right lg:pr-25">
-                <h3 class="lg:text-3xl font-bold">Gambar Tradisional</h3>
-                <p class="text-[11px] lg:text-sm text-neutral-600 mt-2">Singkatnya, saya mulai menggambar pada masa TK
-                    karena ketika saya melihat sesuatu
-                    yang
-                    menurut ku menarik, maka munculah rasa ingin tahu bagaimana rasanya bisa menggambar
-                    objek-objek yang menarik tersebut, biasanya saya suka menggambar mobil, pemandangan alam,
-                    kemudian
-                    ke kota, tapi selain menggambar saya dapat juga menggambar komik series diriku sendiri
-                    dalam
-                    bentuk stickman dan membuat banyak cerita. </p>
+            <div class="w-full text-center lg:text-right">
+                <h3 class="text-xl lg:text-3xl font-bold">
+                    Gambar Tradisional
+                </h3>
+
+                <p class="text-[11px] lg:text-sm text-neutral-600 mt-2 leading-relaxed">
+                    Singkatnya, saya mulai menggambar pada masa TK karena ketika
+                    saya melihat sesuatu yang menurut ku menarik, maka munculah
+                    rasa ingin tahu bagaimana rasanya bisa menggambar objek-objek
+                    yang menarik tersebut, biasanya saya suka menggambar mobil,
+                    pemandangan alam, kemudian ke kota, tapi selain menggambar
+                    saya dapat juga menggambar komik series diriku sendiri dalam
+                    bentuk stickman dan membuat banyak cerita.
+                </p>
             </div>
 
         </section>
 
-        <section id="detector-4" class="min-h-[60vh] w-full items-center justify-center flex relative">
-            <div class="C w-1/1 lg:w-1/3 absolute right-0 lg:-left-25 pointer-events-none z-40 text-right">
+        <section id="detector-4" class="w-full max-w-5xl mx-auto items-center justify-center flex relative">
+            <div class="C w-1/1 lg:w-1/2 absolute right-0 lg:-left-25 pointer-events-none z-40 text-right">
                 <h3 class="lg:text-3xl font-bold">Gambar Digital</h3>
                 <p class="text-[11px] lg:text-sm text-neutral-600 mt-2">namun kalau sekarang saya beralih ke digital, ini
                     bermula ketika suatu hari pada masa SMA saya mengalami gangguan terhadap pengumpulan
@@ -183,24 +192,24 @@
                     Powerpoint adalah software yang cocok untuk ku.</p>
             </div>
 
-            <div id="icon-adjust-mobile" class="image-slot flex flex-row w-full max-w-4xl h-[500px] rounded-3xl flex items-center justify-center relative">
-                <div class="w-1/1 lg:w-1/3 flex justify-center">
+            <div id="icon-adjust-mobile" class="image-slot w-full h-[200px] h-[500px] rounded-3xl flex items-center justify-center relative">
+                <div class="w-1/1 lg:w-1/1 flex justify-center">
                 </div>
             </div>
 
-            <div class="w-1/3 text-right lg:pr-65">
+            <div class="w-1/5 text-right">
             </div>
 
         </section>
 
-        <section id="detector-5" class="min-h-[60vh] w-full items-center justify-center flex relative">
+        <section id="detector-5" class="w-full max-w-5xl mx-auto items-center justify-center flex relative">
 
-            <div id="icon-adjust-mobile" class="image-slot flex flex-row  w-full max-w-4xl h-[500px] rounded-3xl flex items-center justify-center relative">
+            <div id="icon-adjust-mobile" class="image-slot w-full h-[200px] rounded-3xl flex items-center justify-center relative">
                 <div class="w-1/1 lg:w-1/3 flex justify-center">
                 </div>
             </div>
 
-            <div class="K w-1/1 lg:w-1/3 text-right lg:pr-25">
+            <div class="K w-1/1 lg:w-1/2 text-right">
                 <h3 class="lg:text-3xl font-bold">Animasi</h3>
                 <p class="text-[11px] lg:text-sm text-neutral-600 mt-2">
                     Ini bermula ketika saya kelas 4 SD, suatu hari kakak saya di lab
@@ -215,7 +224,7 @@
 
 
             <!-- Wrapper Background: Mengisi penuh area konten tanpa menggeser layout -->
-            <div id="darktrans" class="relative w-screen h-screen top-0 ml-[calc(97%-97vw)] z-10">
+            <div id="darktrans" class="relative w-screen h-screen top-0 ml-[calc(97%-97vw)] z-10 ">
                 <div id="background1-adjust-mobile" class="w-full h-full bg-[url('galeri-page.jpg.jpeg')] bg-cover bg-center bg-no-repeat">
 
                 </div>
@@ -226,15 +235,29 @@
         <div class="relative w-screen h-screen ml-[calc(97%-97vw)] z-20 flex justify-center items-center ">
 
             <div class="absolute lg:-top-30 flex flex-col text-center">
-            <h1
-                class="text-3xl md:text-4xl lg:text-[124px] [-webkit-text-stroke:0px_orange] font-bold bg-gradient-to-b from-amber-800 to-amber-1000 text-transparent bg-clip-text font-archivo uppercase tracking-wider text-center z-10">
-                SOFTWARE
-            </h1>
-            <h3 class="lg:text-2xl font-bold text-blue-500 z-30 lg:pt-30">- Microsoft PowerPoint -</h3>
-                <h3 class="lg:text-2xl font-bold text-blue-400 z-30 lg:pt-40">- Canva -</h3>
-                <h3 class="lg:text-2xl font-bold text-blue-300 z-30 lg:pt-40">- Krita -</h3>
-                <h3 class="lg:text-2xl font-bold text-blue-200 z-30 lg:pt-40">- GIMP -</h3>
-
+                <h1 class="text-3xl md:text-4xl lg:text-[124px]
+                    font-bold font-archivo uppercase tracking-wider text-center
+                    text-transparent bg-clip-text
+                    bg-gradient-to-b from-amber-200 to-amber-100
+                    drop-shadow-[0_0_15px_rgba(245,158,11,0.5)]
+                    [-webkit-text-stroke:1px_rgba(245,158,11,0.25)]
+                    z-10">
+                    SOFTWARE
+                </h1>
+                <div class="bg-white/1 backdrop-blur-md border border-white/1 rounded-4xl lg:mt-20 lg:mx-40 p-8 lg:py-10 lg:space-y-10 shadow-lg z-50">
+                    <div class="bg-white/0 backdrop-blur-md border border-white/0 rounded-3xl shadow-lg hover:bg-white/15 transition-all duration-300 z-50 ">
+                    <h3 class="lg:text-2xl font-bold text-blue-500 z-30 lg:py-10">- Microsoft PowerPoint -</h3>
+                        </div>
+                    <div class="bg-white/0 backdrop-blur-md border border-white/0 rounded-3xl shadow-lg hover:bg-white/15 transition-all duration-300 z-50 ">
+                    <h3 class="lg:text-2xl font-bold text-blue-400 z-30 lg:py-10">- Canva -</h3>
+                        </div>
+                    <div class="bg-white/0 backdrop-blur-md border border-white/0 rounded-3xl shadow-lg hover:bg-white/15 transition-all duration-300 z-50 ">
+                    <h3 class="lg:text-2xl font-bold text-blue-300 z-30 lg:py-10">- Krita -</h3>
+                        </div>
+                    <div class="bg-white/0 backdrop-blur-md border border-white/0 rounded-3xl shadow-lg hover:bg-white/15 transition-all duration-300 z-50 ">
+                    <h3 class="lg:text-2xl font-bold text-blue-200 z-30 lg:py-10">- GIMP -</h3>
+                    </div>
+                </div>
             </div>
 
             <div id="background3-adjust-mobile" class="bg-asist-parallax w-full h-full bg-[url('assost-page.jpg.jpeg')] bg-cover bg-center bg-no-repeat">
@@ -523,7 +546,7 @@
 
     ScrollTrigger.create({
         trigger: "#darktrans",
-        start: "top 5%",
+        start: "top 1%",
 
         onEnter: () => {
             gsap.to("body", {
