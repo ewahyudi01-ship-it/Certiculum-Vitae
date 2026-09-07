@@ -17,6 +17,14 @@ body {
     border-color: rgb(255, 207, 171);
 }
 
+body.bgAnimation-active {
+    background-image: url('stars.jpg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background 0.5s ease;
+}
+
 #gallery-page {
     background-color: rgb(23,22,35);
 }
