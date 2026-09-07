@@ -73,4 +73,11 @@ h1,h2 {
     background-position: top;
     background-repeat: no-repeat;
 }
+
+    #cloud-adjust-mobile {
+        background-image: url("coudes.png");
+        background-size: auto 50%;
+        background-position: top;
+        background-repeat: no-repeat;
+    }
 }
