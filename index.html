@@ -291,23 +291,26 @@
             <div id="background3-adjust-mobile" class="bg-asist-parallax w-full h-full bg-[url('assost-page.jpg.jpeg')] bg-cover bg-center bg-no-repeat">
             </div>
 
-            <div class="absolute w-screen left-1/2 -translate-x-1/2 bottom-11 lg:-bottom-150 z-10 ">
-                <img src="coudes.png" class="w-[380vw] lg:w-[105vw] max-w-none h-auto object-cover block scale-105 z-50 "/>
-            </div>
         </div>
 
-        <div class="relative w-screen h-screen lg:top-70 ml-[calc(97%-97vw)] flex justify-center items-center  z-30 ">
-            <div id="landscape-parallax" class="w-full h-full bg-[url('cityLandscape.jpg.jpeg')] bg-cover bg-center bg-no-repeat">
-            </div>
-            <div class="absolute w-screen left-1/2 -translate-x-1/2 -bottom-85 z-10 ">
-                <img src="Rooftop.png" class="w-[380vw] lg:w-[105vw] max-w-none h-auto object-cover block scale-105 z-50 "/>
+        <div class="relative w-screen h-screen ml-[calc(97%-97vw)] flex justify-center items-center  z-30 ">
+
+            <div class="absolute w-screen h-[100px] left-1/2 lg:top-0 -translate-x-1/2 -bottom-85 bg-[#7080b4]"></div>
+
+            <div class="absolute w-screen left-1/2 -translate-x-1/2 z-10 lg:-top-30  ">
+                <img src="coudes.png" class="w-[380vw] lg:w-[105vw] max-w-none h-auto object-cover block scale-105 z-50 "/></div>
+
+            <div id="landscape-parallax" class="absolute w-full h-full lg:-bottom-70  bg-[url('cityLandscape.jpg.jpeg')] bg-cover bg-center bg-no-repeat z-60"> </div>
+
+            <div class="absolute w-screen left-1/2 -translate-x-1/2 lg:-bottom-120 z-70 ">
+                <img src="Rooftop.png" class="w-[380vw] lg:w-[105vw] max-w-none h-auto object-cover block scale-105"/>
             </div>
 
         </div>
 
 
 
-        <div class="relative w-screen h-screen ml-[calc(97%-97vw)] z-20 lg:-bottom-105">
+        <div class="relative w-screen h-screen ml-[calc(97%-97vw)] z-20 lg:-bottom-100">
 
             <div class="absolute flex flex-col lg:-bottom-60 inset-0 flex items-center justify-center text-center lg:-left-190 -top-40 px-10 lg:px-275">
                 <h3 class="lg:text-5xl font-bold text-blue-200 z-30 "></h3>
@@ -498,7 +501,7 @@
     });
 
     gsap.to(".bg-asist-parallax", {
-        y: "20%", // Menggeser div background sebesar 20% dari tingginya seiring scroll
+        y: "45%", // Menggeser div background sebesar 20% dari tingginya seiring scroll
         ease: "none",
         scrollTrigger: {
             trigger: ".bg-asist-parallax",
