@@ -54,6 +54,13 @@ h1,h2 {
         margin-top: calc(50% - 50vh);
     }
 
+    .background-adjust-mobile {
+        background-image: url("landingpagev2.jpg.jpeg");
+        background-size: auto 70%;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+
     #background1-adjust-mobile {
         background-image: url("galeri-page.jpg.jpeg");
         background-size: auto 50%;
@@ -73,6 +80,13 @@ h1,h2 {
     background-position: top;
     background-repeat: no-repeat;
 }
+
+    .background4-adjust-mobile {
+        background-image: url("cityLandscape.jpg.jpeg");
+        background-size: auto 50%;
+        background-position: top;
+        background-repeat: no-repeat;
+    }
 
     #cloud-adjust-mobile {
         background-image: url("coudes.png");
