@@ -25,6 +25,11 @@ body.bgAnimation-active {
     transition: background 0.5s ease;
 }
 
+@theme {
+    --text-shadow-xl: 0 35px 35px rgb(0, 0, 0 );
+}
+
+
 #gallery-page {
     background-color: rgb(23,22,35);
 }
@@ -42,6 +47,34 @@ h1,h2 {
     transform: perspective(500px) rotateY(-20deg);
 }
 
+@keyframes cloud-slide-right {
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translateX(150vw);
+    }
+}
+
+.cloud-right {
+    animation: cloud-slide-right 2s ease-in-out forwards;
+}
+
+@keyframes cloud-slide-left {
+    from {
+        transform: translateX(50%);
+    }
+
+    to {
+        transform: translateX(-150vw);
+    }
+}
+
+.cloud-left {
+    animation: cloud-slide-left 2s ease-in-out forwards;
+}
+
 @media (max-width: 786px){
 
     .text-perspective{
@@ -55,8 +88,8 @@ h1,h2 {
     }
 
     .background-adjust-mobile {
-        background-image: url("landingpagev2.jpg.jpeg");
-        background-size: auto 70%;
+        background-image: url("landingpagev3.jpg.jpeg");
+        background-size: auto 90%;
         background-position: bottom;
         background-repeat: no-repeat;
     }
