@@ -54,11 +54,11 @@
 
 <div class="relative min-h-screen overflow-hidden top:-top-20 lg:-top-30">
     <div class="cloud-left absolute -top-5 lg:-top-10 right-1/2 z-10">
-        <img src="snowleft.png" class="w-[400px] md:w-[1000px] lg:w-[1800px] max-w-none" alt=''>
+        <img src="snowleft.png" class="w-[400px] md:w-[1000px] lg:w-[1900px] max-w-none" alt=''>
     </div>
 
     <div class="cloud-right absolute -top-5 lg:-top-10 left-1/2 z-10">
-        <img src="snowRight.png" class="w-[520px] md:w-[1000px] lg:w-[1800px] max-w-none" alt=''>
+        <img src="snowRight.png" class="w-[520px] md:w-[1000px] lg:w-[1900px] max-w-none" alt=''>
     </div>
 </div>
 
@@ -282,92 +282,167 @@
                     drop-shadow-[0_0_15px_rgba(245,158,11,0.5)]
                     [-webkit-text-stroke:1px_rgba(245,158,11,0.25)]
                     z-10">
-                    SOFTWARE
+                    SOFTWARE?
                 </h1>
 
             </div>
-                <div class="absolute w-full h-auto grid grid-cols-[1fr_1fr] lg:grid grid-cols-[3fr_1fr] rounded-3xl mb-90 lg:mb-0 lg:mt-20 lg:px-60 justify-self-end items-center z-50">
+                <div class="absolute w-full h-auto grid grid-cols-1 lg:grid-cols-[3fr_1fr] rounded-3xl mb-90 lg:mb-0 lg:mt-20 lg:px-60 justify-self-end items-center z-50">
 
-                    <div class="col-start-1 grid justify-items-end items-center lg:mt-20">
-                    <div id="infoppt" class="panel active [grid-area:1/1] bg-white/1 backdrop-blur-md border border-white/1 rounded-4xl lg:w-2/3 lg:mr-40 lg:p-10 lg:space-y-10 inset-shadow-sm inset-shadow-cyan-200/60 z-50 text-center">
+                    <div id ="infoDesignContainer" class="col-start-1 lg:col-start-1 grid w-full justify-items-end items-center lg:mt-20">
+                    <div id="infoppt" class="panel active [grid-area:1/1] bg-white/1 backdrop-blur-md border border-white/1 rounded-4xl w-screen lg:w-2/3 lg:mr-40 lg:p-20 lg:space-y-10 inset-shadow-sm inset-shadow-cyan-200/60 z-50 text-center">
                         <span class="text-[8px] lg:text-sm mt-2 text-blue-100 drop-shadow-[0_0_5px_rgba(63,228,214,3)]">
                             Untuk singkat, saya menggunakan Powerpoint karena mudah dipelajari dan banyak tools, selain itu karena saya tidak punya drawing pad dan cuman mouse, jadi menggambar berbagai bentuk tanpa drawing pen, akan sulit dan membuang waktu. Selain itu tools di Powerpoint bisa membuat objek 3D bahkan animasi: Gif, mp4.
                         </span>
                     </div>
 
-                    <div id="infocanva" class="panel hidden [grid-area:1/1] bg-white/1 backdrop-blur-md border border-white/1 rounded-4xl lg:w-2/3 lg:mr-40 lg:p-10 lg:space-y-10 inset-shadow-sm inset-shadow-cyan-200/60 z-50 text-center">
+                    <div id="infocanva" class="panel hidden [grid-area:1/1] bg-white/1 backdrop-blur-md border border-white/1 rounded-4xl w-screen lg:w-2/3 lg:mr-40 lg:p-10 lg:space-y-10 inset-shadow-sm inset-shadow-cyan-200/60 z-50 text-center">
                         <span class="text-[8px] lg:text-sm mt-2 text-blue-100 drop-shadow-[0_0_5px_rgba(63,228,214,3)]">
                             Sering diggunakan pada pembuatan poster, presentasi, video.
                         </span>
                     </div>
 
-                    <div id="infokrita" class="panel hidden [grid-area:1/1] bg-white/1 backdrop-blur-md border border-white/1 rounded-4xl lg:w-2/3 lg:mr-40 lg:p-10 lg:space-y-10 inset-shadow-sm inset-shadow-cyan-200/60 z-50 text-center">
+                    <div id="infokrita" class="panel hidden [grid-area:1/1] bg-white/1 backdrop-blur-md border border-white/1 rounded-4xl w-screen lg:w-2/3 lg:mr-40 lg:p-10 lg:space-y-10 inset-shadow-sm inset-shadow-cyan-200/60 z-50 text-center">
                         <span class="text-[8px] lg:text-sm mt-2 text-blue-100 drop-shadow-[0_0_5px_rgba(63,228,214,3)]">
                             Saya baru belajar menggunakan Krita, biasanya untuk filtering atau edit gambar, walaupun jarang melukis di Krita, saya sudah mencoba membuat animasi di Krita.
                         </span>
                     </div>
 
-                    <div id="infogimp" class="panel hidden [grid-area:1/1] bg-white/1 backdrop-blur-md border border-white/1 rounded-4xl lg:w-2/3 lg:mr-40 lg:p-10 lg:space-y-10 inset-shadow-sm inset-shadow-cyan-200/60 z-50 text-center">
+                    <div id="infogimp" class="panel hidden [grid-area:1/1] bg-white/1 backdrop-blur-md border border-white/1 rounded-4xl w-screen lg:w-2/3 lg:mr-40 lg:p-10 lg:space-y-10 inset-shadow-sm inset-shadow-cyan-200/60 z-50 text-center">
                         <span class="text-[8px] lg:text-sm mt-2 text-blue-100 drop-shadow-[0_0_5px_rgba(63,228,214,3)]">
                             Mirip seperti Adobe Photoshop, saya kebetulan juga baru belajar GIMP untuk edit dan filtering gambar sama seperti Krita, namun untuk keluasan tools nya, GIMP memang lebih bagus.
                         </span>
                     </div>
+
+                        <div id="infomspaint" class="panel hidden [grid-area:1/1] bg-white/1 backdrop-blur-md border border-white/1 rounded-4xl w-screen lg:w-2/3 lg:mr-40 lg:p-10 lg:space-y-10 inset-shadow-sm inset-shadow-cyan-200/60 z-50 text-center">
+                            <span class="text-[8px] lg:text-sm mt-2 text-blue-100 drop-shadow-[0_0_5px_rgba(63,228,214,3)]">
+                                Dulu sering diggunakan ketika masa awal SMA saya, diamana saya tertarik untuk melukis, yang biasanya dipakai untuk buat animasi (Pivot Animator).
+                            </span>
+                        </div>
+
                     </div>
 
+                    <div id="infoProgramContainer" class="hidden row-start-1 col-start-1 grid justify-items-end items-center lg:mt-20">
+                        <div id="infojava" class="panel active [grid-area:1/1] bg-white/1 backdrop-blur-md border border-white/1 rounded-4xl w-screen lg:w-2/3 lg:mr-40 lg:p-10 lg:space-y-10 inset-shadow-sm inset-shadow-cyan-200/60 z-50 text-center">
+                        <span class="text-[8px] lg:text-sm mt-2 text-blue-100 drop-shadow-[0_0_5px_rgba(63,228,214,3)]">
+                            Untuk singkat, saya menggunakan Powerpoint karena mudah dipelajari dan banyak tools, selain itu karena saya tidak punya drawing pad dan cuman mouse, jadi menggambar berbagai bentuk tanpa drawing pen, akan sulit dan membuang waktu. Selain itu tools di Powerpoint bisa membuat objek 3D bahkan animasi: Gif, mp4.
+                        </span>
+                        </div>
 
+                        <div id="infophp" class="panel hidden [grid-area:1/1] bg-white/1 backdrop-blur-md border border-white/1 rounded-4xl w-screen lg:w-2/3 lg:mr-40 lg:p-10 lg:space-y-10 inset-shadow-sm inset-shadow-cyan-200/60 z-50 text-center">
+                        <span class="text-[8px] lg:text-sm mt-2 text-blue-100 drop-shadow-[0_0_5px_rgba(63,228,214,3)]">
+                            Sering diggunakan pada pembuatan poster, presentasi, video.
+                        </span>
+                        </div>
 
-                    <div class="bg-white/1 col-start-2 backdrop-blur-md border border-white/1 rounded-4xl lg:mt-40 p-6 lg:p-8 lg:py-10 lg:space-y-10 shadow-lg z-50 text-end">
+                        <div id="infokotlin" class="panel hidden [grid-area:1/1] bg-white/1 backdrop-blur-md border border-white/1 rounded-4xl w-screen lg:w-2/3 lg:mr-40 lg:p-10 lg:space-y-10 inset-shadow-sm inset-shadow-cyan-200/60 z-50 text-center">
+                        <span class="text-[8px] lg:text-sm mt-2 text-blue-100 drop-shadow-[0_0_5px_rgba(63,228,214,3)]">
+                            Saya baru belajar menggunakan Krita, biasanya untuk filtering atau edit gambar, walaupun jarang melukis di Krita, saya sudah mencoba membuat animasi di Krita.
+                        </span>
+                        </div>
 
-                        <div class="flex items-center justify-items-center grid grid-cols-3">
+                        <div id="infohtml" class="panel hidden [grid-area:1/1] bg-white/1 backdrop-blur-md border border-white/1 rounded-4xl w-screen lg:w-2/3 lg:mr-40 lg:p-10 lg:space-y-10 inset-shadow-sm inset-shadow-cyan-200/60 z-50 text-center">
+                        <span class="text-[8px] lg:text-sm mt-2 text-blue-100 drop-shadow-[0_0_5px_rgba(63,228,214,3)]">
+                            Mirip seperti Adobe Photoshop, saya kebetulan juga baru belajar GIMP untuk edit dan filtering gambar sama seperti Krita, namun untuk keluasan tools nya, GIMP memang lebih bagus.
+                        </span>
+                        </div>
+                    </div>
 
-                            <div button="">
-                                <span class="text-center text-[8px] lg:text-sm mt-2 p-2 text-blue-100 drop-shadow-[0_0_5px_rgba(63,228,214,3)] font-bold bg-white/1 backdrop-blur-md border border-white/1 rounded-2xl inset-shadow-sm inset-shadow-cyan-200/60 z-50 "><</span></div>
+                    <div class="bg-white/1 col-start-2 backdrop-blur-md border border-white/1 rounded-4xl mt-100 lg:mt-40 p-6 lg:p-8 lg:py-10 lg:space-y-10 shadow-lg z-50 text-end">
 
-                            <span class="text-center text-[8px] lg:text-sm mt-2 text-blue-100 drop-shadow-[0_0_5px_rgba(63,228,214,3)] bg-white/1 backdrop-blur-md border border-white/1 rounded-2xl inset-shadow-sm inset-shadow-cyan-200/60 z-50">
-                                Software Design
+                        <div class="items-center justify-items-center grid grid-cols-3">
+
+                            <button id="prevSoftware">
+                                <span class="text-center text-[8px] lg:text-sm mt-2 p-2 text-blue-100 drop-shadow-[0_0_5px_rgba(63,228,214,3)] font-bold bg-white/1 backdrop-blur-md border border-white/1 rounded-2xl inset-shadow-sm inset-shadow-cyan-200/60 z-50 "><</span>
+                            </button>
+
+                            <span id="softwareTitle" class="text-center text-[8px] lg:text-sm py-3 lg:py-2 mt-2 text-blue-100 drop-shadow-[0_0_5px_rgba(63,228,214,3)] bg-white/1 backdrop-blur-md border border-white/1 rounded-2xl inset-shadow-sm inset-shadow-cyan-200/60 z-50">
+                                Software: Design
                             </span>
 
-                            <div button="">
+                            <button id="nextSoftware">
                                 <span class="text-center text-[8px] lg:text-sm mt-2 p-2 text-blue-100 drop-shadow-[0_0_5px_rgba(63,228,214,3)] font-bold bg-white/1 backdrop-blur-md border border-white/1 rounded-2xl inset-shadow-sm inset-shadow-cyan-200/60 z-50 ">></span>
-                            </div>
-
+                            </button>
                         </div>
 
 
-                        <button id="pptbutton" class="w-full">
-                            <img src="PPt-logo.png" class="absolute w-[50px] h-auto lg:w-[60px] object-cover rounded ">
+                        <div ID="designPanel" class="relative [grid-area:1/1]">
+
+                        <button id="pptbutton" class="w-full lg:mb-5">
+                            <img src="PPt-logo.png" class="absolute w-[40px] h-auto -top-1 lg:-top-0 lg:w-[60px] lg:-top-2 object-cover rounded ">
                             <div class="bg-white/0 backdrop-blur-md border border-white/0 rounded-2xl shadow-lg hover:bg-white/15 transition-all duration-200 z-50 ">
-                                <h3 class="text-xs lg:text-1xl font-bold text-blue-200 z-30 lg:py-3 text-end">- Microsoft PowerPoint -</h3>
+                                <h3 class="text-xs lg:text-1xl font-bold text-blue-100 z-30 lg:py-3 text-end">- Microsoft PowerPoint -</h3>
                             </div>
                         </button>
 
-                        <button id="canvabutton" class="w-full">
+                        <button id="canvabutton" class="w-full lg:mb-5">
                             <img src="canva.png" class="absolute w-[50px] lg:w-auto lg:h-[50px] object-cover rounded ">
                             <div class="bg-white/0 backdrop-blur-md border border-white/0 rounded-2xl shadow-lg hover:bg-white/15 transition-all duration-200 z-50 ">
-                                <h3 class="text-xs lg:text-1xl font-bold text-blue-300 z-30 lg:py-3 text-end">- Canva -</h3>
+                                <h3 class="text-xs lg:text-1xl font-bold text-blue-200 z-30 lg:py-3 text-end">- Canva -</h3>
                             </div>
                         </button>
 
-                        <button id="kritabutton" class="w-full">
-                            <img src="krita.png" class="absolute w-auto h-[30px] lg:h-[50px] object-cover rounded ">
+                        <button id="kritabutton" class="w-full lg:mb-5">
+                            <img src="krita.png" class="absolute w-auto h-[25px] lg:h-[50px] mx-1 lg:mx-0 object-cover rounded ">
                             <div class="bg-white/0 backdrop-blur-md border border-white/0 rounded-2xl shadow-lg hover:bg-white/15 transition-all duration-200 z-50 ">
-                                <h3 class="text-xs lg:text-1xl font-bold text-blue-400 z-30 lg:py-3 text-end">- Krita -</h3>
+                                <h3 class="text-xs lg:text-1xl font-bold text-blue-300 z-30 lg:py-3 text-end">- Krita -</h3>
                             </div>
                         </button>
 
-                        <button id="gimpbutton" class="w-full">
-                            <img src="GIMP.svg.webp" class="absolute w-fit w-auto h-[30px] lg:h-[50px] object-cover rounded ">
+                        <button id="gimpbutton" class="w-full lg:mb-5">
+                            <img src="GIMP.svg.webp" class="absolute w-fit w-auto h-[20px] lg:h-[45px] mx-1 object-cover rounded ">
                             <div class="bg-white/0 backdrop-blur-md border border-white/0 rounded-2xl shadow-lg hover:bg-white/15 transition-all duration-200 z-50 ">
-                                <h3 class="text-xs lg:text-1xl font-bold text-blue-500 z-30 lg:py-3 text-end">- GIMP -</h3>
+                                <h3 class="text-xs lg:text-1xl font-bold text-blue-400 z-30 lg:py-3 text-end">- GIMP -</h3>
                             </div>
                         </button>
+
+                            <button id="mspaintbutton" class="w-full lg:mb-5">
+                                <img src="msPaint.png" class="absolute w-fit w-auto h-[20px] lg:h-[35px] mx-1 lg:m-1 object-cover rounded ">
+                                <div class="bg-white/0 backdrop-blur-md border border-white/0 rounded-2xl shadow-lg hover:bg-white/15 transition-all duration-200 z-50 ">
+                                    <h3 class="text-xs lg:text-1xl font-bold text-blue-400 z-30 lg:py-3 text-end">- Microsoft Paint -</h3>
+                                </div>
+                            </button>
+
+                        </div>
+
+                        <div ID="programPanel" class="hidden relative [grid-area:1/1]">
+
+                            <button id="javabutton" class="w-full p-3 lg:mb-5 lg:p-0">
+                                <img src="javaLogo.png" class="absolute w-[15px] h-auto lg:w-[30px] object-cover rounded ">
+                                <div class="bg-white/0 backdrop-blur-md border border-white/0 rounded-2xl shadow-lg hover:bg-white/15 transition-all duration-200 z-50 ">
+                                    <h3 class="text-xs lg:text-1xl font-bold text-blue-100 z-30 lg:py-3 text-end">- Java -</h3>
+                                </div>
+                            </button>
+
+                            <button id="phpbutton" class="w-full p-3 lg:mb-5 lg:p-0">
+                                <img src="phpLogo.png" class="absolute w-[30px] lg:w-auto lg:h-[30px] lg:mt-2 object-cover rounded ">
+                                <div class="bg-white/0 backdrop-blur-md border border-white/0 rounded-2xl shadow-lg hover:bg-white/15 transition-all duration-200 z-50 ">
+                                    <h3 class="text-xs lg:text-1xl font-bold text-blue-200 z-30 lg:py-3 text-end">- Php -</h3>
+                                </div>
+                            </button>
+
+                            <button id="kotlinbutton" class="w-full p-3 lg:mb-5 lg:p-0">
+                                <img src="kotliinLogo.png" class="absolute w-auto h-[15px] lg:h-[30px] lg:m-2 object-cover rounded ">
+                                <div class="bg-white/0 backdrop-blur-md border border-white/0 rounded-2xl shadow-lg hover:bg-white/15 transition-all duration-200 z-50 ">
+                                    <h3 class="text-xs lg:text-1xl font-bold text-blue-300 z-30 lg:py-3 text-end">- Kotlin -</h3>
+                                </div>
+                            </button>
+
+                            <button id="htmlbutton" class="w-full p-3 lg:mb-5 lg:p-0">
+                                <img src="htmlLogo.png" class="absolute w-fit w-auto h-[20px] lg:h-[40px] object-cover rounded ">
+                                <div class="bg-white/0 backdrop-blur-md border border-white/0 rounded-2xl shadow-lg hover:bg-white/15 transition-all duration-200 z-50 ">
+                                    <h3 class="text-xs lg:text-1xl font-bold text-blue-400 z-30 lg:py-3 text-end">- Html -</h3>
+                                </div>
+                            </button>
+
+                        </div>
+
                     </div>
 
 
                 </div>
 
 
-            <div id="" class="bg-asist-parallax w-screen h-full lg:absolute bg-[url('assost-page.jpg.jpeg')] bg-cover bg-center bg-no-repeat">
+            <div id="" class="bg-asist-parallax w-screen h-full absolute bg-[url('assost-page.jpg.jpeg')] bg-cover bg-center bg-no-repeat">
             </div>
 
         </div>
@@ -375,10 +450,10 @@
         <div class="relative w-full h-screen flex justify-center items-center  z-30 ">
 
             <div class="absolute w-screen h-[100px] lg:left-1/2 lg:top-0 lg:-translate-x-1/2 lg:-bottom-85 bg-[#7080b4]"></div>
-            <div class="absolute overflow-hidden lg:overflow-visible w-screen lg:left-1/2 lg:-translate-x-1/2 z-10 -top-50 lg:bottom-220 lg:-top-30  ">
+            <div class="absolute overflow-hidden lg:overflow-visible w-screen lg:left-1/2 lg:-translate-x-1/2 z-10 -top-90 lg:bottom-220 lg:-top-30  ">
                 <img src="coudes.png" id="cloud-adjust-mobile" class="w-[300vw] lg:w-[105vw] max-w-none h-auto object-cover block scale-105 z-90 "/></div>
 
-            <div id="landscape-parallax" class=" w-screen h-full bottom-70 lg:-bottom-70 lg:absolute bg-[url('cityLandscape.jpg.jpeg')] bg-cover bg-center bg-no-repeat"> </div>
+            <div id="landscape-parallax" class="absolute w-screen h-full bottom-70 lg:-bottom-70 bg-[url('cityLandscape.jpg.jpeg')] bg-cover bg-center bg-no-repeat"> </div>
 
             <div class="absolute w-screen lg:left-1/2 -translate-x-1/2 bottom-100 lg:-bottom-120 z-70 ">
                 <img src="Rooftop.png" class="w-[50vw] lg:w-[105vw] max-w-none h-auto object-cover block scale-105"/>
@@ -481,8 +556,118 @@
 </div>
 
 
-<!-- SCRIPT GSAP FLIP & SCROLLTRIGGER -->
+<!-- SCRIPT GSAP FLIP, BUTTON & SCROLLTRIGGER -->
 <script>
+
+    <!-- button < dan > -->
+
+    const prevContainer = document.getElementById("prevSoftware")
+    const nextContainer = document.getElementById("nextSoftware")
+
+    const softwareTitle = document.getElementById("softwareTitle");
+
+    const designPanel = document.getElementById("designPanel");
+    const programPanel = document.getElementById("programPanel");
+
+    const InfoProgramContainer = document.getElementById("infoProgramContainer")
+    const InfoDesignContainer = document.getElementById("infoDesignContainer")
+
+
+        let currentSection = 0;
+
+    <!-- btn > -->
+    nextSoftware.addEventListener("click", () => {
+
+        if (currentSection === 0) {
+
+            gsap.to(designPanel, {
+                opacity: 0,
+                x: -50,
+                duration: 0.3,
+                onComplete: () => {
+
+                    designPanel.classList.add("hidden");
+                    InfoDesignContainer.classList.add("hidden");
+
+                    programPanel.classList.remove("hidden");
+                    InfoProgramContainer.classList.remove("hidden");
+
+                    gsap.fromTo(programPanel,
+                        {
+                            opacity: 0,
+                            x: 50
+                        },
+                        {
+                            opacity: 1,
+                            x: 0,
+                            duration: 0.4
+                        }
+                    );
+
+                    gsap.fromTo(
+                        infoProgramContainer,
+                        {
+                            opacity: 0,
+                            x: 50
+                        },
+                        {
+                            opacity: 1,
+                            x: 0,
+                            duration: 0.4
+                        }
+                    );
+
+                    nextPanel.classList.add('active');
+
+                }
+            });
+            softwareTitle.textContent = "Software: Program";
+
+            currentSection = 1;
+        }
+
+    });
+
+    <!-- btn < -->
+    prevSoftware.addEventListener("click", () => {
+
+        if (currentSection === 1) {
+
+            gsap.to(programPanel, {
+
+                opacity: 0,
+                x: -50,
+                duration: 0.3,
+                onComplete: () => {
+
+                    programPanel.classList.add("hidden");
+                    InfoProgramContainer.classList.add("hidden");
+
+                    designPanel.classList.remove("hidden");
+                    InfoDesignContainer.classList.remove("hidden");
+
+                    gsap.fromTo(designPanel,
+                        {
+                            opacity: 0,
+                            x: 50
+                        },
+                        {
+                            opacity: 1,
+                            x: 0,
+                            duration: 0.4
+                        }
+                    );
+
+                    nextPanel.classList.add('active');
+                }
+            });
+
+            softwareTitle.textContent = "Software: Design";
+
+            currentSection = 0;
+        }
+
+    });
 
     pptbutton.addEventListener("click", () => {
         showPanel("infoppt");
@@ -498,6 +683,27 @@
 
     gimpbutton.addEventListener("click", () => {
         showPanel("infogimp");
+    });
+
+    mspaintbutton.addEventListener("click", () => {
+        showPanel("infomspaint");
+    });
+
+
+    javabutton.addEventListener("click", () => {
+        showPanel("infojava");
+    });
+
+    phpbutton.addEventListener("click", () => {
+        showPanel("infophp");
+    });
+
+    kotlinbutton.addEventListener("click", () => {
+        showPanel("infokotlin");
+    });
+
+    htmlbutton.addEventListener("click", () => {
+        showPanel("infohtml");
     });
 
     function showPanel(panelId) {
