@@ -67,7 +67,7 @@
 </div>
 
 <div class="absolute flex bottom-70 lg:-bottom-20 items-center right-[5px] lg:right-[60px]">
-    <img src="Da flag.png" class="w-[50vw] lg:w-[33vw] max-w-none h-auto object-cover block z-5"/>
+    <img id= "flagAnimation" src="Da-flag.png" class="w-[50vw] lg:w-[33vw] max-w-none h-auto object-cover block z-5"/>
 </div>
 
 <div class="lg:py-70 relative flex flex-col min-h-fit">
@@ -160,8 +160,8 @@
             </div>
 
             <div id="hobiPage" class="E w-1/1 lg:w-1/1 text-right">
-                <h3 class="lg:text-3xl font-bold">Skill</h3>
-                <p class="text-[8px] lg:text-sm text-neutral-600 mt-2">Gambar digital,
+                <h3 class="lg:text-3xl font-bold text-neutral-700">Skill</h3>
+                <p class="text-[8px] lg:text-sm text-neutral-700 mt-2">Gambar digital,
                     animasi, Web development (1 bulan), Kotlin (2 minggu), java (5 bulan), Php (3 minggu).</p>
             </div>
 
@@ -171,10 +171,9 @@
         <section id="detector-2" class="w-full max-w-5xl mx-auto items-center justify-center flex relative">
 
             <div class="R w-1/1 lg:w-full absolute right-0 lg:-left-0 pointer-events-none z-40 text-right max-w-xs ">
-                <h3 class="lg:text-3xl font-bold">Hobi?</h3>
-                <p class="text-[8px] lg:text-sm text-neutral-600 mt-2">Sebagai individu
-                    remaja-dewasa, saya pengembar dengan banyak hal seperti menggambar, bikin animasi, 3D art,
-                    sepertinya ada banyak hobi yang ku miliki namun bagaimana saya mendapatkan seluruh hobi-hobi
+                <h3 class="lg:text-3xl font-bold text-neutral-700">Hobi?</h3>
+                <p class="text-[8px] lg:text-sm text-neutral-700 mt-2">Sebagai individu
+                    remaja-dewasa, saya pengembar dengan banyak hal seperti menggambar, bikin animasi, 3D art, namun bagaimana saya mendapatkan seluruh hobi-hobi
                     ini?</p>
             </div>
 
@@ -201,7 +200,7 @@
                     Gambar Tradisional
                 </h3>
 
-                <p class="text-[8px] lg:text-sm text-neutral-600 mt-2 leading-relaxed">
+                <p class="text-[8px] lg:text-sm text-neutral-700 mt-2 leading-relaxed">
                     Singkatnya, saya mulai menggambar pada masa TK karena ketika
                     saya melihat sesuatu yang menurut ku menarik, maka munculah
                     rasa ingin tahu bagaimana rasanya bisa menggambar objek-objek
@@ -217,7 +216,7 @@
         <section id="detector-4" class="w-full max-w-5xl mx-auto items-center justify-center flex relative">
             <div class="C w-1/1 lg:w-full absolute right-0 lg:-left-0 pointer-events-none z-40 text-right max-w-xs">
                 <h3 class="lg:text-3xl font-bold">Gambar Digital</h3>
-                <p class="text-[8px] lg:text-sm text-neutral-600 mt-2">namun kalau sekarang saya beralih ke digital, ini
+                <p class="text-[8px] lg:text-sm text-neutral-700 mt-2">namun kalau sekarang saya beralih ke digital, ini
                     bermula ketika suatu hari pada masa SMA saya mengalami gangguan terhadap pengumpulan
                     tugas
                     video karena laptop saya terlalu lambat untuk export videonya, dan kebetulan guru saya
@@ -254,7 +253,7 @@
 
             <div class="K w-1/1 lg:w-1/1 text-right">
                 <h3 class="lg:text-3xl font-bold">Animasi</h3>
-                <p class="text-[8px] lg:text-sm text-neutral-600 mt-2">
+                <p class="text-[8px] lg:text-sm text-neutral-700 mt-2">
                     Ini bermula ketika saya kelas 4 SD, suatu hari kakak saya di lab
                     komputer sekolah menunjukan software animasi “Pivot Animator”, dan sejak itu saya sering bikin
                     animasi setiap hari, yang terasa lebih menyenangkan seperti main game, seiring bertahun-tahun,
@@ -954,6 +953,36 @@
         }
 
     });
+
+    <!-- animasi bendera halaman home -->
+
+    const flag = document.getElementById("flagAnimation");
+
+    const frames = [
+        "Da-flag.png",
+        "Da-flag2.png",
+        "Da-flag3.png",
+        "Da-flag4.png",
+        "Da-flag5.png",
+        "Da-flag6.png"
+    ];
+
+    let frame = {
+        current: 0
+    };
+
+    gsap.to(frame, {
+        current: frames.length - 1,
+        duration: 0.6,
+        ease: "steps(9)",
+        repeat: -1,
+
+        onUpdate: () => {
+            flag.src = frames[Math.floor(frame.current)];
+        }
+    });
+
+
 
 
 </script>
