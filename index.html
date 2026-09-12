@@ -16,14 +16,13 @@
 
 </head>
 
-<body class="overflow-x-hidden">
+<body class="w-screen h-screen overflow-x-hidden">
 <div id="homePage"
      class="background-adjust-mobile bg-parallax absolute inset-0 bg-[url('landingpagev3.jpg.jpeg')] bg-cover bg-center h-120 -left-5 lg:-left-0 lg:h-screen md:h-100 opacity-90 ">
 </div>
 <div id="navBar"
-     class="fixed lg:inset-x-0 items-center flex flex-row px-10 gap-5 lg:px-10 py-5 bg-[rgb(90,121,208)] backdrop-blur-md font-bold backdrop-filter shadow-sm justify-between lg:justify-center top-0 gap-1 lg:gap-10 md:gap-3 text-black text-center text-sm md:text-[14px] lg:text-[16px] md:text-[11px] z-100">
-    <ul class="nav-item rounded-2xl bg-orange-200 text-black p-1 px-3"><a class="nav-link" href="#homePage">Home</a>
-    </ul>
+     class="fixed w-screen lg:inset-x-0 items-center flex flex-row px-2 gap-5 lg:px-10 py-5 bg-[rgb(90,121,208)] backdrop-blur-md font-bold backdrop-filter shadow-sm lg:justify-center top-0 gap-1 lg:gap-10 md:gap-3 text-black text-center text-sm md:text-[14px] lg:text-[16px] md:text-[11px] z-100">
+    <ul class="nav-item rounded-2xl bg-orange-200 text-black p-1 px-3"><a class="nav-link" href="#homePage">Home</a></ul>
     <ul class="nav-item"><a class="nav-link text-white" href="#hobiPage">Hobbies</a></ul>
     <ul class="nav-item"><a class="nav-link text-white" href="#galeriPage">Gallery</a></ul>
     <ul class="nav-item"><a class="nav-link text-white" href="animasigaleri.html">Animation</a></ul>
@@ -52,7 +51,7 @@
     </div>
 </div>
 
-<div class="relative min-h-screen overflow-hidden top:-top-20 lg:-top-30">
+<div class="relative min-h-screen overflow-hidden top:top-20 lg:-top-30">
     <div class="cloud-left absolute -top-5 lg:-top-10 right-1/2 z-10">
         <img src="snowleft.png" class="w-[400px] md:w-[1000px] lg:w-[1900px] max-w-none" alt=''>
     </div>
@@ -66,13 +65,13 @@
     <img src="snow ground.png" class="w-[350vw] lg:w-[105vw] max-w-none h-auto object-cover block scale-105 z-50 "/>
 </div>
 
-<div class="absolute flex bottom-60 lg:-bottom-20 items-center right-[5px] lg:right-[60px]">
-    <img id= "flagAnimation" src="Da-flag.png" class="w-[50vw] lg:w-[33vw] max-w-none h-auto object-cover block z-5"/>
+<div class="absolute flex bottom-80 lg:-bottom-20 items-center right-[40px] lg:right-[60px]">
+    <img id= "flagAnimation" src="Da-flag.png" class="w-[35vw] lg:w-[33vw] max-w-none h-auto object-cover block z-5"/>
 </div>
 
-<div class="relative flex flex-col min-h-fit">
+<div class="relative flex flex-col h-auto">
 
-    <div class="absolute w-screen right-0 -top-90 lg:-top-27 w-screen z-0">
+    <div class="absolute w-screen -top-90 lg:-top-27 w-screen z-0">
         <div class="h-60 lg:h-80 bg-gradient-to-t from-[rgb(43,43,43)] to-[rgb(173,173,173)] z-40"></div>
         <div class="h-150 lg:h-200 bg-gradient-to-t from-[rgb(23,23,23)] via-[rgb(23,23,23)] to-[rgb(43,43,43)] z-40"></div>
         <div class="h-5 lg:h-5 bg-gradient-to-t from-transparent to-[rgb(23,23,23)] z-40"></div>
@@ -89,14 +88,14 @@
             </div>
 
         <div class="mx-[30px]] lg:mx-[250px] md:mx-[70px] rounded-1xl z-20">
-            <div class="bg-black/30 text-white text-sm md:text-1xl lg:text-2xl font-light lg:px-20 lg:py-5">
+            <div class="bg-black/30 text-white text-sm md:text-1xl lg:text-2xl font-light lg:px-20 py-3 lg:py-5">
                 About me
             </div>
 
             <div class="relative left-0 right-0 top-[15px] h-[350px] lg:h-[600px] bg-black/0 z-30">
                 <div class ="relative lg:gap-2 grid grid-cols-[1fr_2fr] lg:grid-cols-[1fr_3fr] h-full">
                     <div class="relative backdrop-blur-md h-full inset-shadow-sm inset-shadow-indigo-900/20 z-40 ">
-                        <div class="relative bg-black/55 bg-[url('untltlrfd.jpg')] bg-cover py-5 lg:h-full lg:py-20 lg:px-15 justify-center flex flex-wrap">
+                        <div class="relative bg-black/55 bg-[url('untltlrfd.jpg')] bg-cover py-5 px-5 lg:h-full lg:py-20 lg:px-15 justify-center flex flex-wrap">
                             <span class="text-1xl lg:text-1xl text-white text-center">
                                 SEMESTER SAAT INI
                             </span>
@@ -126,158 +125,162 @@
         </div>
     </div>
 
-    <aside class="w-1/5 lg:w-1/6 h-screen sticky top-0 lg:mt-40 flex flex-col justify-center items-center lg:gap-6 lg:p-4">
+    <div class="grid grid-cols-[1fr_7fr] mt-10">
 
-        <p class="text-[11px] text-neutral-500 uppercase tracking-widest mb-2">About</p>
+        <aside class="w-[80%] col-first h-screen sticky top-0 flex flex-col justify-center items-center lg:gap-6 lg:p-4">
 
-        <!-- Elemen-elemen yang berurut ke bawah -->
-        <div class="nav-slot flex items-center justify-center w-16 lg:w-24 h-16 lg:h-29">
-            <div id="nav-item-1" class="nav-box cursor-pointer flex items-center justify-center w-full h-full">
-                <img src="E.png" class="w-full h-auto object-contain z-10">
-            </div>
-        </div>
+            <p class="text-[11px] text-neutral-500 uppercase tracking-widest mb-2">About</p>
 
-        <div class="nav-slot flex items-center justify-center w-16 lg:w-24 h-16 lg:h-24">
-            <div id="nav-item-2" class="nav-box cursor-pointer flex items-center justify-center w-full h-full">
-                <img src="R.png" class="w-full h-auto object-contain z-10">
-            </div>
-        </div>
-
-        <div class="nav-slot flex items-center justify-center w-16 lg:w-24 h-16 lg:h-24">
-            <div id="nav-item-3" class="nav-box cursor-pointer flex items-center justify-center w-full h-full">
-                <img src="I.png" class="w-full h-auto object-contain z-10">
-            </div>
-        </div>
-
-        <div class="nav-slot flex items-center justify-center w-16 lg:w-24 h-16 lg:h-24">
-            <div id="nav-item-4" class="nav-box cursor-pointer flex items-center justify-center w-full h-full">
-                <img src="C.png" class="w-full h-auto object-contain z-10">
-            </div>
-        </div>
-
-        <div class="nav-slot flex items-center justify-center w-16 lg:w-24 h-16 lg:h-24">
-            <div id="nav-item-5" class="nav-box cursor-pointer flex items-center justify-center w-full h-full">
-                <img src="K.png" class="w-full h-auto object-contain z-10">
-            </div>
-        </div>
-
-    </aside>
-
-
-    <!-- AREA DETECTOR (Area Utama di Kanan / Tengah) -->
-    <main class="flex-1 flex flex-col mt-40 lg:mt-10">
-
-        <!-- Detector Zone 1: Untuk Elemen 01 -->
-        <section id="detector-1" class="w-full max-w-5xl mx-auto items-center justify-center flex relative">
-
-            <div id="icon-adjust-mobile" class="image-slot flex flex-row w-full h-[500px] rounded-2xl flex items-center justify-center relative">
-                <div class="w-1/1 lg:w-1/3 flex justify-center">
+            <!-- Elemen-elemen yang berurut ke bawah -->
+            <div class="nav-slot flex items-center justify-center w-16 lg:w-24 h-16 lg:h-29">
+                <div id="nav-item-1" class="nav-box cursor-pointer flex items-center justify-center w-full h-full">
+                    <img src="E.png" class="w-full h-auto object-contain z-10">
                 </div>
             </div>
 
-            <div id="hobiPage" class="E w-1/1 lg:w-1/1 text-right">
-                <h3 class="lg:text-3xl font-bold text-neutral-700">Skill</h3>
-                <p class="text-[8px] lg:text-sm text-neutral-700 mt-2">Gambar digital,
-                    animasi, Web development (1 bulan), Kotlin (2 minggu), java (5 bulan), Php (3 minggu).</p>
-            </div>
-
-        </section>
-
-        <!-- Detector Zone 2: Untuk Elemen 02 -->
-        <section id="detector-2" class="w-full max-w-5xl mx-auto items-center justify-center flex relative">
-
-            <div class="R w-1/1 lg:w-full absolute right-0 lg:-left-0 pointer-events-none z-40 text-right max-w-xs ">
-                <h3 class="lg:text-3xl font-bold text-neutral-700">Hobi?</h3>
-                <p class="text-[8px] lg:text-sm text-neutral-700 text-justify mt-2">Sebagai individu
-                    remaja-dewasa, saya pengembar dengan banyak hal seperti menggambar, bikin animasi, 3D art, namun bagaimana saya mendapatkan seluruh hobi-hobi
-                    ini?</p>
-            </div>
-
-            <div id="icon-adjust-mobile" class ="image-slot flex flex-row w-full  h-[400px] rounded-2xl flex items-center justify-center relative">
-                <div class="w-1/1 lg:w-1/1 flex justify-center">
+            <div class="nav-slot flex items-center justify-center w-16 lg:w-24 h-16 lg:h-24">
+                <div id="nav-item-2" class="nav-box cursor-pointer flex items-center justify-center w-full h-full">
+                    <img src="R.png" class="w-full h-auto object-contain z-10">
                 </div>
             </div>
 
-            <div class="w-1/5 text-right ">
-            </div>
-
-        </section>
-
-
-        <section id="detector-3" class="w-full lg:max-w-5xl mx-auto items-center justify-center flex relative z-20">
-
-            <div id="icon-adjust-mobile" class="image-slot flex-row w-full h-[500px] rounded-2xl flex items-center justify-center relative">
-                <div class="w-1/1 lg:w-1/3 flex justify-center">
+            <div class="nav-slot flex items-center justify-center w-16 lg:w-24 h-16 lg:h-24">
+                <div id="nav-item-3" class="nav-box cursor-pointer flex items-center justify-center w-full h-full">
+                    <img src="I.png" class="w-full h-auto object-contain z-10">
                 </div>
             </div>
 
-            <div class="I w-1/1 lg:w-full absolute lg:relative text-center lg:text-right max-w-xs z-20">
-                <h3 class="text-xl lg:text-3xl font-bold text-neutral-700">
-                    Gambar Tradisional
-                </h3>
-
-                <p class="text-[8px] text-justify lg:text-sm text-neutral-700 mt-2 leading-relaxed">
-                    Singkatnya, saya mulai menggambar pada masa TK karena ketika
-                    saya melihat sesuatu yang menurut ku menarik, maka munculah
-                    rasa ingin tahu bagaimana rasanya bisa menggambar objek-objek
-                    yang menarik tersebut, biasanya saya suka menggambar mobil,
-                    pemandangan alam, kemudian ke kota, tapi selain menggambar
-                    saya dapat juga menggambar komik series diriku sendiri dalam
-                    bentuk stickman dan membuat banyak cerita.
-                </p>
-            </div>
-
-        </section>
-
-        <section id="detector-4" class="w-full max-w-5xl mx-auto items-center justify-center flex relative">
-            <div class="C w-1/1 lg:w-full absolute right-0 lg:-left-0 pointer-events-none z-40 text-right max-w-xs">
-                <h3 class="lg:text-3xl font-bold text-neutral-700">Gambar Digital</h3>
-                <p class="text-[8px] lg:text-sm text-neutral-700 mt-2">namun kalau sekarang saya beralih ke digital, ini
-                    bermula ketika suatu hari pada masa SMA saya mengalami gangguan terhadap pengumpulan
-                    tugas
-                    video karena laptop saya terlalu lambat untuk export videonya, dan kebetulan guru saya
-                    tahu
-                    banyak dengan aplikasi-aplikasi microsoft seperti Excel, Word, dan Power Point. Jadi
-                    ketika
-                    guru ku melihat masalah yang saya alami, Dibukalah software PowerPoint lalu Save As
-                    dengan
-                    file format mp4, dan sekilas saya baru tahu ternyata simpan file itu ada format, dan
-                    dari
-                    format terseut memuat ku penasaran apakah saya bisa gambar di PowerPoint? dan tidak lama
-                    kemudian saya menyadari ternyata PowerPoint memang bisa bikin gambar. Lucunya, ada banyak software
-                    gambar lain yang bisa saya pakai, namun saya tidak memiliki pensil digital, jadi cuman mouse dan
-                    Powerpoint adalah software yang cocok untuk ku.</p>
-            </div>
-
-            <div id="icon-adjust-mobile" class="image-slot flex-row w-full h-[500px] rounded-2xl flex items-center justify-center relative">
-                <div class="w-1/1 lg:w-1/1 flex justify-center">
+            <div class="nav-slot flex items-center justify-center w-16 lg:w-24 h-16 lg:h-24">
+                <div id="nav-item-4" class="nav-box cursor-pointer flex items-center justify-center w-full h-full">
+                    <img src="C.png" class="w-full h-auto object-contain z-10">
                 </div>
             </div>
 
-
-            <div class="w-1/5 text-right">
-            </div>
-
-        </section>
-
-        <section id="detector-5" class="w-full max-w-5xl mx-auto items-center justify-center flex relative">
-
-            <div id="icon-adjust-mobile" class="image-slot flex-row w-full h-[500px] rounded-2xl flex items-center justify-center relative">
-                <div class="w-1/2 lg:w-1/3 flex justify-center">
+            <div class="nav-slot flex items-center justify-center w-16 lg:w-24 h-16 lg:h-24">
+                <div id="nav-item-5" class="nav-box cursor-pointer flex items-center justify-center w-full h-full">
+                    <img src="K.png" class="w-full h-auto object-contain z-10">
                 </div>
             </div>
 
-            <div class="K w-1/1 lg:w-1/1 text-right">
-                <h3 class="lg:text-3xl font-bold text-neutral-700">Animasi</h3>
-                <p class="text-[8px] lg:text-sm text-neutral-700 mt-2">
-                    Ini bermula ketika saya kelas 4 SD, suatu hari kakak saya di lab
-                    komputer sekolah menunjukan software animasi “Pivot Animator”, dan sejak itu saya sering bikin
-                    animasi setiap hari, yang terasa lebih menyenangkan seperti main game, seiring bertahun-tahun,
-                    animasi saya mulai berkembang dan sekarang saya merujuk untuk mencoba software lain yang lebih
-                    advanced, </p>
-            </div>
+        </aside>
 
-        </section>
+        <!-- AREA DETECTOR (Area Utama di Kanan / Tengah) -->
+        <main class="flex-1 flex flex-col">
+
+            <!-- Detector Zone 1: Untuk Elemen 01 -->
+            <section id="detector-1" class="w-full max-w-5xl mx-auto items-center justify-center flex relative">
+
+                <div id="icon-adjust-mobile" class="image-slot flex flex-row w-full h-[500px] rounded-2xl flex items-center justify-center relative">
+                    <div class="w-1/1 lg:w-1/3 flex justify-center">
+                    </div>
+                </div>
+
+                <div id="hobiPage" class="E w-1/1 lg:w-1/1 text-right">
+                    <h3 class="lg:text-3xl font-bold text-neutral-700">Skill</h3>
+                    <p class="text-[8px] lg:text-sm text-neutral-700 mt-2">Gambar digital,
+                        animasi, Web development (1 bulan), Kotlin (2 minggu), java (5 bulan), Php (3 minggu).</p>
+                </div>
+
+            </section>
+
+            <!-- Detector Zone 2: Untuk Elemen 02 -->
+            <section id="detector-2" class="w-full max-w-5xl mx-auto items-center justify-center flex relative">
+
+                <div class="R w-1/1 lg:w-full absolute right-0 lg:-left-0 pointer-events-none z-40 text-right max-w-xs ">
+                    <h3 class="lg:text-3xl font-bold text-neutral-700">Hobi?</h3>
+                    <p class="text-[8px] lg:text-sm text-neutral-700 text-justify mt-2">Sebagai individu
+                        remaja-dewasa, saya pengembar dengan banyak hal seperti menggambar, bikin animasi, 3D art, namun bagaimana saya mendapatkan seluruh hobi-hobi
+                        ini?</p>
+                </div>
+
+                <div id="icon-adjust-mobile" class ="image-slot flex flex-row w-full  h-[400px] rounded-2xl flex items-center justify-center relative">
+                    <div class="w-1/1 lg:w-1/1 flex justify-center">
+                    </div>
+                </div>
+
+                <div class="w-1/5 text-right ">
+                </div>
+
+            </section>
+
+
+            <section id="detector-3" class="w-full lg:max-w-5xl mx-auto items-center justify-center flex relative z-20">
+
+                <div id="icon-adjust-mobile" class="image-slot flex-row w-full h-[500px] rounded-2xl flex items-center justify-center relative">
+                    <div class="w-1/1 lg:w-1/3 flex justify-center">
+                    </div>
+                </div>
+
+                <div class="I w-1/1 lg:w-full absolute lg:relative text-center lg:text-right max-w-xs z-20">
+                    <h3 class="text-xl lg:text-3xl font-bold text-neutral-700">
+                        Gambar Tradisional
+                    </h3>
+
+                    <p class="text-[8px] text-justify lg:text-sm text-neutral-700 mt-2 leading-relaxed">
+                        Singkatnya, saya mulai menggambar pada masa TK karena ketika
+                        saya melihat sesuatu yang menurut ku menarik, maka munculah
+                        rasa ingin tahu bagaimana rasanya bisa menggambar objek-objek
+                        yang menarik tersebut, biasanya saya suka menggambar mobil,
+                        pemandangan alam, kemudian ke kota, tapi selain menggambar
+                        saya dapat juga menggambar komik series diriku sendiri dalam
+                        bentuk stickman dan membuat banyak cerita.
+                    </p>
+                </div>
+
+            </section>
+
+            <section id="detector-4" class="w-full max-w-5xl mx-auto items-center justify-center flex relative">
+                <div class="C w-1/1 lg:w-full absolute right-0 lg:-left-0 pointer-events-none z-40 text-right max-w-xs">
+                    <h3 class="lg:text-3xl font-bold text-neutral-700">Gambar Digital</h3>
+                    <p class="text-[8px] lg:text-sm text-neutral-700 mt-2">namun kalau sekarang saya beralih ke digital, ini
+                        bermula ketika suatu hari pada masa SMA saya mengalami gangguan terhadap pengumpulan
+                        tugas
+                        video karena laptop saya terlalu lambat untuk export videonya, dan kebetulan guru saya
+                        tahu
+                        banyak dengan aplikasi-aplikasi microsoft seperti Excel, Word, dan Power Point. Jadi
+                        ketika
+                        guru ku melihat masalah yang saya alami, Dibukalah software PowerPoint lalu Save As
+                        dengan
+                        file format mp4, dan sekilas saya baru tahu ternyata simpan file itu ada format, dan
+                        dari
+                        format terseut memuat ku penasaran apakah saya bisa gambar di PowerPoint? dan tidak lama
+                        kemudian saya menyadari ternyata PowerPoint memang bisa bikin gambar. Lucunya, ada banyak software
+                        gambar lain yang bisa saya pakai, namun saya tidak memiliki pensil digital, jadi cuman mouse dan
+                        Powerpoint adalah software yang cocok untuk ku.</p>
+                </div>
+
+                <div id="icon-adjust-mobile" class="image-slot flex-row w-full h-[500px] rounded-2xl flex items-center justify-center relative">
+                    <div class="w-1/1 lg:w-1/1 flex justify-center">
+                    </div>
+                </div>
+
+
+                <div class="w-1/5 text-right">
+                </div>
+
+            </section>
+
+            <section id="detector-5" class="w-full max-w-5xl mx-auto items-center justify-center flex relative">
+
+                <div id="icon-adjust-mobile" class="image-slot flex-row w-full h-[500px] rounded-2xl flex items-center justify-center relative">
+                    <div class="w-1/2 lg:w-1/3 flex justify-center">
+                    </div>
+                </div>
+
+                <div class="K w-1/1 lg:w-1/1 text-right">
+                    <h3 class="lg:text-3xl font-bold text-neutral-700">Animasi</h3>
+                    <p class="text-[8px] lg:text-sm text-neutral-700 mt-2">
+                        Ini bermula ketika saya kelas 4 SD, suatu hari kakak saya di lab
+                        komputer sekolah menunjukan software animasi “Pivot Animator”, dan sejak itu saya sering bikin
+                        animasi setiap hari, yang terasa lebih menyenangkan seperti main game, seiring bertahun-tahun,
+                        animasi saya mulai berkembang dan sekarang saya merujuk untuk mencoba software lain yang lebih
+                        advanced, </p>
+                </div>
+
+            </section>
+        </main>
+
+    </div>
 
             <!-- Wrapper Background: Mengisi penuh area konten tanpa menggeser layout -->
             <div id="darktrans" class="relative w-screen h-screen lg:mt-40 ml-[calc(97%-97vw)] z-10 ">
@@ -537,8 +540,6 @@
             </div>
         </div>
 
-
-    </main>
 </div>
 
 <div id="contacttrans" class="relative pt-10 lg:pt-50">
@@ -560,7 +561,7 @@
     </div>
     <div class="relative flex flex-col -bottom-80 lg:-bottom-70 lg:px-30 z-20 text-white text-perspective justify-start text-center">
         <h1 class="text-xl md:text-2xl lg:text-5xl ">Contacts</h1>
-        <div class="pt-2 text-[11px] lg:pt-5 lg:text-[15px]">
+        <div class="pt-2 text-[11px] lg:pt-5 lg:text-[15px] text-white">
             <p>Instagram: @Erick_wsdh</p>
             <p>Line ID: e.rck_lune.</p>
             <p>Whatsapp: +62 81547139168</p>
@@ -962,10 +963,6 @@
                 duration: 0.6
             });
 
-            gsap.to("p", {
-                color: "#525252",
-                duration: 0.6
-            });
         }
 
     });

@@ -13,7 +13,6 @@
 
 body {
     background-color: rgb(237,220,211);
-    padding: 15px;
     border-color: rgb(255, 207, 171);
 }
 
@@ -96,7 +95,7 @@ h1,h2 {
 
     #background1-adjust-mobile {
         background-image: url("galeri-page.jpg.jpeg");
-        background-size: auto 50%;
+        background-size: auto 70%;
         background-position: bottom;
         background-repeat: no-repeat;
     }
