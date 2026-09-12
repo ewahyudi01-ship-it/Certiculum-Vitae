@@ -125,7 +125,7 @@
         </div>
     </div>
 
-    <div class="grid grid-cols-[1fr_7fr] mt-10">
+    <div class="grid grid-cols-[1fr_7fr] mt-10 justify-center">
 
         <aside class="w-[80%] col-first h-screen sticky top-0 flex flex-col justify-center items-center lg:gap-6 lg:p-4">
 
@@ -165,7 +165,7 @@
         </aside>
 
         <!-- AREA DETECTOR (Area Utama di Kanan / Tengah) -->
-        <main class="flex-1 flex flex-col">
+        <main class="flex-1 flex flex-col lg:pr-30">
 
             <!-- Detector Zone 1: Untuk Elemen 01 -->
             <section id="detector-1" class="w-full max-w-5xl mx-auto items-center justify-center flex relative">
@@ -211,12 +211,12 @@
                     </div>
                 </div>
 
-                <div class="I w-1/1 lg:w-full absolute lg:relative text-center lg:text-right max-w-xs z-20">
+                <div class="I w-1/1 lg:w-1/1 absolute lg:relative text-center lg:text-right z-20">
                     <h3 class="text-xl lg:text-3xl font-bold text-neutral-700">
                         Gambar Tradisional
                     </h3>
 
-                    <p class="text-[8px] text-justify lg:text-sm text-neutral-700 mt-2 leading-relaxed">
+                    <p class="text-[8px] text-justify lg:text-end lg:text-sm text-neutral-700 mt-2 leading-relaxed">
                         Singkatnya, saya mulai menggambar pada masa TK karena ketika
                         saya melihat sesuatu yang menurut ku menarik, maka munculah
                         rasa ingin tahu bagaimana rasanya bisa menggambar objek-objek
@@ -232,7 +232,7 @@
             <section id="detector-4" class="w-full max-w-5xl mx-auto items-center justify-center flex relative">
                 <div class="C w-1/1 lg:w-full absolute right-0 lg:-left-0 pointer-events-none z-40 text-right max-w-xs">
                     <h3 class="lg:text-3xl font-bold text-neutral-700">Gambar Digital</h3>
-                    <p class="text-[8px] lg:text-sm text-neutral-700 mt-2">namun kalau sekarang saya beralih ke digital, ini
+                    <p class="text-[8px] lg:text-sm text-justify lg:text-start text-neutral-700 mt-2">namun kalau sekarang saya beralih ke digital, ini
                         bermula ketika suatu hari pada masa SMA saya mengalami gangguan terhadap pengumpulan
                         tugas
                         video karena laptop saya terlalu lambat untuk export videonya, dan kebetulan guru saya
@@ -269,7 +269,7 @@
 
                 <div class="K w-1/1 lg:w-1/1 text-right">
                     <h3 class="lg:text-3xl font-bold text-neutral-700">Animasi</h3>
-                    <p class="text-[8px] lg:text-sm text-neutral-700 mt-2">
+                    <p class="text-[8px] lg:text-sm text-justify lg:text-end text-neutral-700 mt-2">
                         Ini bermula ketika saya kelas 4 SD, suatu hari kakak saya di lab
                         komputer sekolah menunjukan software animasi “Pivot Animator”, dan sejak itu saya sering bikin
                         animasi setiap hari, yang terasa lebih menyenangkan seperti main game, seiring bertahun-tahun,
@@ -464,15 +464,69 @@
 
         </div>
 
-        <div class="relative w-full h-screen flex justify-center items-center  z-30 ">
+        <div class="relative w-full h-screen flex justify-center items-center z-30 ">
 
             <div class="absolute w-screen h-[100px] lg:left-1/2 lg:top-0 lg:-translate-x-1/2 lg:-bottom-85 bg-[#7080b4]"></div>
-            <div class="absolute overflow-hidden lg:overflow-visible w-screen lg:left-1/2 lg:-translate-x-1/2 z-10 -top-90 lg:bottom-220 lg:-top-30  ">
-                <img src="coudes.png" id="cloud-adjust-mobile" class="w-[300vw] lg:w-[105vw] max-w-none h-auto object-cover block scale-105 z-90 "/></div>
+            <div class="absolute overflow-hidden lg:overflow-visible w-screen lg:left-1/2 lg:-translate-x-1/2 z-10 -top-90 lg:-top-30  ">
+                <img src="coudes.png" id="cloud-adjust-mobile" class="w-[300vw] lg:w-[105vw] max-w-none h-auto object-cover block scale-105 z-90 "/>
+
+                <div id="galeriPage" class="">
+
+                        <div class="relative flex-col w-full min-h-screen px-[10%]">
+                            <h2 class="text-6xl text-black text-center">My Gallery</h2>
+
+                            <a href="galeri.html">
+                                <h4 class="text-sm text-black text-center hover:scale-[1.02] transition duration-300">Click bottom pictures to find out more ></h4>
+                            </a>
+
+                            <div class="grid grid-cols-2 gap-4">
+
+                            <div class="grid grid-cols-12 auto-rows-[70px] gap-4 place-items-center pt-10 ">
+
+                                    <a href="galeri.html"
+                                        class="w-full h-full col-span-6 col-start-2 row-start-1 row-span-3 md:col-span-3 md:row-span-2 md:col-start-4 lg:row-start-1 lg:row-span-3 lg:col-span-2 lg:col-start-5 border border-cyan-300/70 shadow-[0_0_8px_rgba(70,220,255,0.5),0_0_20px_rgba(70,220,255,0.25)]">
+                                        <img src="walppaper desert lunarwp.png" class="w-full h-full object-cover hover:scale-[1.02] transition duration-300">
+                                    </a>
+
+                                    <a href="galeri.html"
+                                        class="w-full h-full col-span-5 col-start-8 row-start-2 row-span-1   md:#97a778col-span-2 md:col-start-7 md:col-span-1 md:row-start-2 lg:row-start-2 col-start-7 col-span-1 row-span-2 border border-cyan-300/60 shadow-[0_0_8px_rgba(70,220,255,0.55),0_0_18px_rgba(70,220,255,0.3),0_0_30px_rgba(220,70,255,0.15)]">
+                                        <img src="238.png"
+                                         class="w-full h-full object-cover hover:scale-[1.02] transition duration-300">
+                                    </a>
+
+                                    <a href="galeri.html"
+                                        class="w-full h-full col-span-5 col-start-0 row-start-4 row-span-1   md:col-start-2 md:col-span-5 md:row-span-2 col-start-3 lg:row-start-4 lg:col-start-3 lg:row-span-2 lg:col-span-4 border border-cyan-300/70 shadow-[0_0_8px_rgba(70,220,255,0.5),0_0_20px_rgba(70,220,255,0.25)]">
+                                        <img src="UKMEudaimoniArt(1).PNG" class="w-full h-full object-cover hover:scale-[1.02] transition duration-300">
+                                    </a>
+
+                                    <a href="galeri.html"
+                                        class="w-full h-full col-span-5 col-start-8 row-start-4 row-span-2   md:col-span-4 md:row-span-3 lg:row-span-3 lg:col-start-7 lg:row-start-4 lg:col-span-3 border border-cyan-300/60 shadow-[0_0_8px_rgba(70,220,255,0.55),0_0_18px_rgba(70,220,255,0.3),0_0_30px_rgba(220,70,255,0.15)]">
+                                        <img src="General Voltan.png" class="w-full h-full object-cover hover:scale-[1.02] transition duration-300">
+                                    </a>
+
+                                    <a href="galeri.html"
+                                        class="w-full h-full col-span-6 col-start-1 row-start-5 row-span-1   md:col-start-3 md:col-span-4 md:row-start-5 lg:row-start-6 lg:col-start-4 lg:col-span-3 border border-cyan-300/70 shadow-[0_0_8px_rgba(70,220,255,0.5),0_0_20px_rgba(70,220,255,0.25)]">
+                                        <img src="https://drive.google.com/thumbnail?id=1vwdlyuU1J5veJDOvzdI_Y7lfis8K_hRR&sz=w2000" class="w-full h-full object-cover hover:scale-[1.02] transition duration-300">
+                                    </a>
+
+                                    <a href="galeri.html"
+                                    class="w-full h-full col-span-6 col-start-6 row-start-6 row-span-1   md:row-start-6 md:col-start-6 md:col-span-4 md:row-span-1 lg:row-start-7 lg:col-start-6 lg:row-span-2 lg:col-span-3 border border-cyan-300/70 shadow-[0_0_8px_rgba(70,220,255,0.5),0_0_20px_rgba(70,220,255,0.25)]">
+                                        <img src="planetw.jpg.jpeg" class="w-full h-full object-cover hover:scale-[1.02] transition duration-300">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+
+            </div>
 
             <div id="landscape-parallax" class="absolute w-screen h-full bottom-70 lg:-bottom-70 bg-[url('cityLandscape.jpg.jpeg')] bg-cover bg-center bg-no-repeat"> </div>
 
-            <div class="absolute w-screen lg:left-1/2 -translate-x-1/2 bottom-100 lg:-bottom-120 z-70 ">
+
+
+
+            <div class="absolute w-screen lg:left-1/2 -translate-x-1/2 bottom-100 lg:-bottom-150 z-70 ">
                 <img src="Rooftop.png" class="w-[50vw] lg:w-[105vw] max-w-none h-auto object-cover block scale-105"/>
             </div>
 
@@ -493,52 +547,7 @@
             </div>
         </div>
 
-        <div id="galeriPage" class="lg:pt-80 md:pt-20">
-            <div class="grid grid-cols-1 gap-4">
 
-                <div class="relative flex-col mt-50 w-full min-h-screen px-[10%]">
-                    <h2 class="text-6xl text-black text-center">My Gallery</h2>
-
-                    <a href="galeri.html">
-                        <h4 class="text-sm text-black text-center hover:scale-[1.02] transition duration-300">Click bottom pictures to find out more ></h4>
-                    </a>
-                    <div class="grid grid-cols-12 auto-rows-[70px] gap-4 place-items-center pt-10 lg:px-[20%]">
-
-                        <a href="galeri.html"
-                           class="w-full h-full col-span-6 col-start-2 row-start-1 row-span-3   md:col-span-3 md:row-span-2 md:col-start-4 lg:row-start-1 lg:row-span-3 lg:col-span-2 lg:col-start-5">
-                            <img src="walppaper desert lunarwp.png" class="w-full h-full object-cover hover:scale-[1.02] transition duration-300">
-                        </a>
-
-                        <a href="galeri.html"
-                           class="w-full h-full col-span-5 col-start-8 row-start-2 row-span-1   md:#97a778col-span-2 md:col-start-7 md:col-span-1 md:row-start-2 lg:row-start-2 col-start-7 col-span-1 row-span-2 shadow-2xl">
-                            <img src="238.png"
-                                 class="w-full h-full object-cover hover:scale-[1.02] transition duration-300">
-                        </a>
-
-                        <a href="galeri.html"
-                           class="w-full h-full col-span-5 col-start-0 row-start-4 row-span-1   md:col-start-2 md:col-span-5 md:row-span-2 col-start-3 lg:row-start-4 lg:col-start-3 lg:row-span-2 lg:col-span-4 shadow-2xl">
-                            <img src="UKMEudaimoniArt(1).PNG"
-                                 class="w-full h-full object-cover hover:scale-[1.02] transition duration-300">
-                        </a>
-
-                        <a href="galeri.html"
-                           class="w-full h-full col-span-5 col-start-8 row-start-4 row-span-2   md:col-span-4 md:row-span-3 lg:row-span-3 lg:col-start-7 lg:row-start-4 lg:col-span-3 shadow-2xl">
-                            <img src="General Voltan.png" class="w-full h-full object-cover hover:scale-[1.02] transition duration-300">
-                        </a>
-
-                        <a href="galeri.html"
-                           class="w-full h-full col-span-6 col-start-1 row-start-5 row-span-1   md:col-start-3 md:col-span-4 md:row-start-5 lg:row-start-6 lg:col-start-4 lg:col-span-3">
-                            <img src="https://drive.google.com/thumbnail?id=1vwdlyuU1J5veJDOvzdI_Y7lfis8K_hRR&sz=w2000" class="w-full h-full object-cover hover:scale-[1.02] transition duration-300">
-                        </a>
-
-                        <a href="galeri.html"
-                           class="w-full h-full col-span-6 col-start-6 row-start-6 row-span-1   md:row-start-6 md:col-start-6 md:col-span-4 md:row-span-1 lg:row-start-7 lg:col-start-6 lg:row-span-2 lg:col-span-3 shadow-2xl">
-                            <img src="planetw.jpg.jpeg" class="w-full h-full object-cover hover:scale-[1.02] transition duration-300">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
 
 </div>
 
