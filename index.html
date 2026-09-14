@@ -30,7 +30,7 @@
 </div>
 
 <div class="absolute lg:left-[280px] top-[85px]">
-    <img src="airshiip.png" id="airship-parallax" class="floatingObj object-contain w-[11vw] z-20 pointer-events-none">
+    <img src="airshiip.png" id="airship-parallax" class="floatingBg object-contain w-[11vw] z-20 pointer-events-none">
 </div>
 
 <div class="absolute w-[20%] h-auto right-[230px] top-[45px]">
@@ -473,10 +473,10 @@
                 <div id="galeriPage" class="">
 
                         <div class="relative flex-col w-full min-h-screen px-[10%]">
-                            <h2 class="floatingText text-6xl text-black text-center">My Gallery</h2>
+                            <h2 class="text-6xl text-black text-center">My Gallery</h2>
 
                             <a href="galeri.html">
-                                <h4 class="floatingText text-sm text-black text-center hover:scale-[1.02] transition duration-300">Click bottom pictures to find out more ></h4>
+                                <h4 class="floatingText lg:p-3 text-sm text-black text-center">Click bottom pictures to find out more ></h4>
                             </a>
 
                             <div class="grid grid-cols-2 gap-4">
@@ -520,7 +520,7 @@
 
             </div>
 
-            <div id="landscape-parallax" class="absolute w-screen h-full bottom-70 lg:-bottom-70 bg-[url('cityLandscape.jpg.jpeg')] bg-cover bg-center bg-no-repeat "> </div>
+            <div id="landscape-parallax" class="galleryAnimation absolute w-screen h-full bottom-70 lg:-bottom-70 bg-[url('cityLandscape.jpg.jpeg')] bg-cover bg-center bg-no-repeat "> </div>
 
             <div class="absolute w-screen lg:left-1/2 -translate-x-1/2 bottom-100 lg:-bottom-140 z-70 ">
                 <img src="Rooftop.png" class="w-[50vw] lg:w-[105vw] max-w-none h-auto object-cover block scale-105 pointer-events-none"/>
@@ -959,7 +959,7 @@
 
     gsap.to(".floatingText", {
         y:-6,
-        duration:1.8,
+        duration:1,
         ease: "sine.inOut",
         yoyo: true,
         repeat: -1
@@ -1013,6 +1013,8 @@
             flag.src = frames[Math.floor(frame.current)];
         }
     });
+
+
     <!-- image-gif footer animation -->
 
     const image = document.querySelector(".footerAnimation");
@@ -1028,6 +1030,23 @@
     };
 
     gif.src = "footer-animated.gif";
+
+
+    <!-- image-gif galeri animation -->
+
+    const image2 = document.querySelector(".galleryAnimation");
+
+    const gif2 = new Image();
+
+    gif2.onload = () => {
+        image2.style.backgroundImage = `url("gallery-animation.gif")`;
+    };
+
+    gif2.onerror = () => {
+        image2.src = "cityLandscape.jpg.jpeg";
+    };
+
+    gif2.src = "gallery-animation.gif";
 
 </script>
 
